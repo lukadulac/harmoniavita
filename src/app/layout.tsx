@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		address: false,
 		telephone: false,
 	},
-	metadataBase: new URL("https://www.harmonijavita.com/"),
+	metadataBase: new URL("https://www.harmonijavita.com"),
 	alternates: {
 		canonical: "/",
 	},
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "HarmoniaVita - Stručna podrška za rast i razvoj",
+		title: "HarmonijaVita - Stručna podrška za rast i razvoj",
 		description:
 			"Stručna podrška za rast i razvoj, za promenu, zdravije odnose i ispunjen život.",
 		images: ["/HarmoniaVitaLogo.png"],
@@ -71,11 +71,13 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: "/HarmoniaVitaLogo.png",
-		shortcut: "/HarmoniaVitaLogo.png",
-		apple: "/HarmoniaVitaLogo.png",
+		icon: [
+			{ url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+			{ url: "/icon.png", sizes: "192x192", type: "image/png" },
+		],
+		shortcut: "/favicon.ico",
+		apple: { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
 	},
-	
 };
 
 export default function RootLayout({
@@ -85,12 +87,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="sr">
-			<head>
-				<link rel="canonical" href="https://www.harmonijavita.com/" />
-				<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-				<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-			</head>
 			<body className="antialiased">
 				<GoogleAnalytics />
 				<Header />
