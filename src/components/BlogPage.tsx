@@ -141,7 +141,23 @@ const BlogPage = () => {
 				"Da bismo počeli da rešavamo problem koji imamo, prvi korak je da sebi jasno priznamo da on postoji.",
 				"Kada sebi kažemo: „Imam strah da priđem devojci… da pronađem posao… da upoznam nove ljude…“ već smo napravili značajan korak ka promeni. Međutim, vrlo često se javlja i stid što uopšte imamo takav problem. Taj stid može postati veća prepreka od samog problema jer nas sabotira i zaustavlja da napravimo prvi korak — bilo da pokušamo sami ili da potražimo stručnu pomoć.",
 				"Iz nas  progovara strah: da nismo dovoljno dobri, da ćemo biti odbijeni, ismejani.... To su pretpostavke koje sami gradimo, često bez stvarne provere. Tako ostajemo poput hrčka u začaranom krugu — mnogo truda, ali bez pomaka, u mestu.",
-				"Posledica toga je da ostajemo sami, nezadovoljni i uvereni da se ništa ne može promeniti. Ali promena je moguća i prvi korak je upravo priznanje problema i spremnost da potražimo podršku. Razgovor sa stručnom osobom može pomoći da prevaziđemo stid, oslobodimo se strahova,  preispitamo svoj osećaj lične vrednosti  i napravimo prve korake ka životu koji želimo — životu u kojem se osećamo samopouzdano i povezano sa drugima."
+				"Posledica toga je da ostajemo sami, nezadovoljni i uvereni da se ništa ne može promeniti. Ali promena je moguća i prvi korak je upravo priznanje problema i spremnost da potražimo podršku. Razgovor sa stručnom osobom može pomoći da prevaziđemo stid, oslobodimo se strahova,  preispitamo svoj osećaj lične vrednosti  i napravimo prve korake ka životu koji želimo — životu u kojem se osećamo samopouzdano i povezano sa drugima.",
+			],
+		},
+		{
+			id: 5,
+			title: "Da li je život vredan samo ako smo u svakom trenutku srećni?",
+			category: "Psihološke teme",
+			author: "Svetlana Belančić",
+			excerpt: "Narodna mudrost kaže da smo mi kovači svoje sreće.",
+			content: [
+				"Narodna mudrost kaže da smo mi kovači svoje sreće. A narod ima iskustvo i zna. Ako verujemo  da se uspeh u životu meri stalnim osećanjem sreće, zadovoljstva i radosti ulazimo u začarani krug koji prati osećaj promašenosti, neostvarenosti  i  ličnog nezadovoljstva onim što imamo i što jesmo. ",
+				"Jadikujemo li nad propuštenim prilikama  i pogrešno donetim odlukama? Ulazimo li često u ulogu žrtve?",
+				"Za početak budite sretni što ste postali svesni šta želite, šta ste propustili, pogrešno uradili  jer  još uvek mnogo toga možete da uradite za sebe",
+				"Promene nisu lake, ali kada se dogode, često se pitamo  -šta smo do sada čekali?-",
+				"Zastanite za trenutak i usmerite pažnju na svoju ličnost, život, sposobnosti i naročito na ono što znate da radite, u čemu ste dobri, ali vam to deluje „nebitno“ jer vam ide od ruke, to se podrazumeva da dobro kuvate, lepo pevate, imate smisla za estetiku, volite životinje, gajite cveće ili jednostavno dobro radite svoj posao.",
+				"Uradite ovo u društvu sa prijateljima. Dopunjavajte liste kvalitetima jedno drugog. Iznenadićete se kad čujete iz tuđeg ugla šta sve znate i možete, a niste toga bili svesni ili tome pridavali značaj.",
+				"Postajući svesni onoga što znamo, što imamo i što jesmo, budi se u nama zahvalnost, gradi i jača samopouzdanje i dobra „slika o sebi“, i jasno nam sve ovo poručuje da sreću i zadovoljstvo treba tražiti u nama samima.",
 			],
 		},
 	];
@@ -220,6 +236,29 @@ const BlogPage = () => {
 										>
 											{paragraph.replace(/@/g, "")}
 										</li>
+									);
+								}
+								const parts = paragraph.split(/(-[^-]+-)/g);
+								const hasInlineItalic = parts.some(
+									(part) => part.startsWith("-") && part.endsWith("-")
+								);
+								if (hasInlineItalic) {
+									return (
+										<p
+											key={index}
+											className="text-gray-700 leading-relaxed mb-2"
+										>
+											{parts.map((part, i) => {
+												if (part.startsWith("-") && part.endsWith("-")) {
+													return (
+														<span key={i} className="italic font-medium">
+															{part.slice(1, -1)}
+														</span>
+													);
+												}
+												return <span key={i}>{part}</span>;
+											})}
+										</p>
 									);
 								}
 								return (
