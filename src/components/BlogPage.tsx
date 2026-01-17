@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { User, ArrowRight, Tag } from "lucide-react";
 
 interface BlogPost {
@@ -14,7 +14,9 @@ interface BlogPost {
 }
 
 const BlogPage = () => {
-	const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+
+
 
 	const blogPosts: BlogPost[] = [
 		{
@@ -162,20 +164,40 @@ const BlogPage = () => {
 		},
 	];
 
+	useEffect(() => {
+		const getPostFromHash = () => {
+			const hash = window.location.hash.slice(1);
+			if (hash) {
+				const postId = parseInt(hash);
+				const post = blogPosts.find(p => p.id === postId);
+				setSelectedPost(post || null);
+			} else {
+				setSelectedPost(null);
+			}
+		};
+
+		getPostFromHash();
+		window.addEventListener('hashchange', getPostFromHash);
+
+		return () => {
+			window.removeEventListener('hashchange', getPostFromHash);
+		};
+	}, []);
+
 	const handleReadMore = (post: BlogPost) => {
-		setSelectedPost(post);
+		window.location.hash = post.id.toString();
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	const handleBackToBlog = () => {
-		setSelectedPost(null);
+		window.location.hash = '';
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	if (selectedPost) {
 		return (
-			<section className="w-full  py-12 min-h-screen">
-				<div className=" mx-auto w-full px-6">
+			<section className="w-full py-12 min-h-screen">
+				<div className="mx-auto w-full px-6">
 					<button
 						onClick={handleBackToBlog}
 						className="mb-8 flex items-center gap-2 text-white hover:text-hv-green/80 transition-colors font-medium"
