@@ -24,6 +24,13 @@
 	--hv-gold: #c7a35e;
 	--hv-green: #70a461;
 }
+@font-face {
+  font-family: "BeauRivage";
+  src: url("./fonts/BeauRivage-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 .svg {
 	filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(648%)

@@ -8,7 +8,7 @@ const HomePage = () => {
 	return (
 		<>
 			{/* Desktop Hero */}
-			<div className="relative hidden md:block h-screen pt-[100px] overflow-hidden">
+			<main className="relative hidden md:block h-screen pt-[100px] overflow-hidden">
 				{/* Background */}
 				<div className="absolute inset-0 bg-gradient-to-br from-hv-beige-6 to-hv-green/70"></div>
 
@@ -16,7 +16,7 @@ const HomePage = () => {
 				<section className="relative z-10 max-w-[1200px] mx-auto px-6">
 					<div className="grid grid-cols-2 gap-10 items-center py-16">
 						<div>
-							<h1 className="text-4xl font-semibold text-hv-green  font-beau leading-tight mb-6">
+							<h1 className="text-5xl font-beau font-semibold tracking-wider text-hv-green leading-tight mb-6">
 								Dobrodošli u Psihološki centar HarmonijaVita
 							</h1>
 							<p className="text-lg text-white/90 max-w-xl mb-3">
@@ -46,12 +46,12 @@ const HomePage = () => {
 						</div>
 					</div>
 				</section>
-			</div>
+			</main>
 
 			{/* Mobile Hero */}
 			<section className="md:hidden pt-[120px] bg-hv-beige-6 pb-8">
 				<div className="max-w-[1200px] mx-auto px-6">
-					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau">
+					<h1 className="text-4xl font-bold tracking-wider text-hv-green mb-4 font-beau">
 						Dobrodošli u Psihološki centar HarmonijaVita
 					</h1>
 					<p className="text-lg text-slate-700 max-w-2xl mb-2">

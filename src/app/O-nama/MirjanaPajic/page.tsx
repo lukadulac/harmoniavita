@@ -61,7 +61,7 @@ const MirjanaPajic = () => {
 				<div className="relative h-full flex items-center pt-[100px]">
 					<div className="max-w-[1200px] mx-auto px-6 w-full grid md:grid-cols-2 gap-8 items-center">
 						<div className="z-10">
-							<h1 className="text-5xl lg:text-6xl font-bold text-hv-green mb-6 font-beau">
+						<h1 className="text-5xl lg:text-6xl font-bold text-hv-green mb-6 font-beau tracking-wider">
 								Mirjana Pajić
 							</h1>
 							<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
@@ -94,7 +94,7 @@ const MirjanaPajic = () => {
 
 			<section className="md:hidden pt-[120px] bg-hv-beige-6 pb-8">
 				<div className="max-w-[1200px] mx-auto px-6">
-					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau">
+					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau tracking-wider">
 						Mirjana Pajić
 					</h1>
 					<p className="text-lg text-slate-700 font-semibold mb-4">
@@ -125,7 +125,7 @@ const MirjanaPajic = () => {
 
 			<section className="  mx-auto px-6 p-16 space-y-2">
 				<div className="max-w-[1200px] mx-auto text-center">
-					<h2 className="text-5xl text-hv-green font-beau text-center font-semibold mb-2">
+					<h2 className="text-5xl text-hv-green font-beau tracking-wider text-center font-semibold mb-2">
 						Obrazovanje
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
@@ -175,7 +175,7 @@ const MirjanaPajic = () => {
 
 			<section className="bg-hv-beige-1 mx-auto px-6 p-16 space-y-2">
 				<div className="max-w-[1200px] mx-auto text-center">
-					<h2 className="text-5xl font-semibold text-hv-green font-beau text-center my-2">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau tracking-wider text-center my-2">
 						Moj pristup i vrednosti
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
@@ -217,7 +217,7 @@ const MirjanaPajic = () => {
 
 			<section className="mx-auto px-6 p-16 space-y-2 ">
 				<div className="max-w-[1200px] mx-auto text-center">
-					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau tracking-wider my-2">
 						Sistemski pristup
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
@@ -261,7 +261,7 @@ const MirjanaPajic = () => {
 
 			<section className="bg-hv-beige-1 mx-auto px-6 p-16  space-y-2">
 				<div className="max-w-[1200px] mx-auto text-center">
-					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau tracking-wider my-2">
 						Česta pitanja
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />

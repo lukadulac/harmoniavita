@@ -214,7 +214,7 @@ const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 							</span>
 						</div>
 
-						<h1 className="font-beau text-hv-green text-3xl md:text-4xl font-bold mb-4">
+<h1 className="font-beau tracking-wider text-hv-green text-3xl md:text-4xl font-bold mb-4">
 							{selectedPost.title}
 						</h1>
 
@@ -225,7 +225,7 @@ const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 
 						<div className="prose prose-lg max-w-none">
 							{selectedPost.themeTitle && (
-								<h3 className="font-beau text-hv-green/80 text-xl font-medium mb-6 italic">
+								<h3 className="font-beau tracking-wider text-hv-green/80 text-xl font-medium mb-6 italic">
 									{selectedPost.themeTitle}
 								</h3>
 							)}
@@ -234,7 +234,7 @@ const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 									return (
 										<h2
 											key={index}
-											className="font-beau text-hv-green text-2xl font-semibold mt-8 mb-4"
+											className="font-beau tracking-wider text-hv-green text-2xl font-semibold mt-8 mb-4"
 										>
 											{paragraph.replace(/\*\*/g, "")}
 										</h2>
@@ -299,10 +299,7 @@ const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 	return (
 		<section className="w-full py-12">
 			<div className="max-w-[1200px] mx-auto w-full px-6">
-				<h1 className="font-beau text-hv-green text-4xl md:text-5xl font-bold text-center mb-8">
-					Psihološke teme
-				</h1>
-
+						<h1 className="font-beau tracking-wider text-hv-green text-4xl md:text-5xl font-bold text-center mb-8">Psihološke teme</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{blogPosts.map((post) => (
 						<article
@@ -317,7 +314,7 @@ const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 									</span>
 								</div>
 
-								<h2 className="font-beau text-hv-green text-2xl font-semibold mb-3 line-clamp-2">
+								<h2 className="font-beau tracking-wider text-hv-green text-2xl font-semibold mb-3 line-clamp-2">
 									{post.title}
 								</h2>
 

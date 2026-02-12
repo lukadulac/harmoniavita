@@ -35,7 +35,7 @@ const Services = () => {
 	return (
 		<section className="w-full bg-hv-beige-1 py-12">
 			<div className="max-w-[1200px] mx-auto w-full px-6">
-				<h2 className="font-beau text-hv-green text-4xl font-semibold text-center">
+					<h2 className="font-beau tracking-wider text-hv-green text-4xl font-semibold text-center">
 					Usluge koje pružamo
 				</h2>
 				<hr className="my-4 border border-spacing-1 mx-auto border-hv-green" />

@@ -6,7 +6,7 @@ const AboutUs = () => {
 	return (
 		<section className=" px-6 py-12 bg-hv-beige-1">
 			<div className=" max-w-[1200px] w-full mx-auto px-6">
-				<h2 className="text-4xl font-semibold text-hv-green mb-4 font-beau">
+					<h2 className="text-4xl font-semibold text-hv-green mb-4 font-beau tracking-wider">
 					O nama
 				</h2>
 				<p>

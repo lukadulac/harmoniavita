@@ -23,7 +23,7 @@ const config: Config = {
 				"hv-green-dark": "#8fa98f",
 			},
 			fontFamily: {
-				beau: ["Beau Rivage", "cursive"],
+				beau: ["BeauRivage", "cursive"],
 			},
 		},
 	},

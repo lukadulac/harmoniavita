@@ -4,7 +4,7 @@ const AboutUs = () => {
 	return (
 		<section className="min-h-screen w-full pt-[120px] bg-hv-beige-6">
 			<div className="max-w-[1200px] mx-auto px-6 py-12">
-				<h1 className="text-4xl md:text-5xl font-bold text-hv-green mb-8 font-beau">
+				<h1 className="text-4xl md:text-5xl font-bold text-hv-green mb-8 font-beau tracking-wider">
 					O nama
 				</h1>
 
@@ -33,7 +33,7 @@ const AboutUs = () => {
 							Partneri smo sa vama na vašem putu ličnog razvoja i promene učenju
 							kako da živite u miru sa sobom i svojom okolinom.
 						</p>
-						<h2 className="text-3xl md:text-4xl font-bold text-hv-green font-beau">
+						<h2 className="text-3xl md:text-4xl font-bold text-hv-green font-beau tracking-wider">
 							Zašto se plašimo promene
 						</h2>
 						<p>
@@ -50,7 +50,7 @@ const AboutUs = () => {
 							Promene se bojimo. Ostajemo dugo zaglavljeni u mestu, bez snage da
 							se jasno odredimo i prepoznamo svoje prave potrebe.
 						</p>
-						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau">
+						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau tracking-wider">
 							Kada obrasci postanu teret
 						</h3>
 						<p>
@@ -60,7 +60,7 @@ const AboutUs = () => {
 							opstajemo u situaciji koja je za nas teška, ponekad čak i
 							neizdržljiva.
 						</p>
-						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau">
+						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau tracking-wider">
 							Trenutak promene
 						</h3>
 						<p>
@@ -80,7 +80,7 @@ const AboutUs = () => {
 							</span>{" "}
 							kojem težimo.
 						</p>
-						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau">
+						<h3 className="text-2xl md:text-3xl font-bold text-hv-green font-beau tracking-wider">
 							Podrška na putu ka sebi
 						</h3>
 						<p>

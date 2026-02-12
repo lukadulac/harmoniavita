@@ -22,7 +22,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 	return (
 		<div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-hv-green/20  flex flex-col">
 			<div className="p-6 flex flex-col flex-1">
-				<h3 className="font-beau text-hv-green text-2xl font-semibold mb-4">
+					<h3 className="font-beau tracking-wider text-hv-green text-2xl font-semibold mb-4">
 					{title}
 				</h3>
 
